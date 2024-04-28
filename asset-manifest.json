@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vikakamau/phase-2-code-challlenge-1/static/css/main.d070eabf.css",
+    "main.js": "/vikakamau/phase-2-code-challlenge-1/static/js/main.341397b7.js",
+    "static/js/453.d3943c81.chunk.js": "/vikakamau/phase-2-code-challlenge-1/static/js/453.d3943c81.chunk.js",
+    "index.html": "/vikakamau/phase-2-code-challlenge-1/index.html",
+    "main.d070eabf.css.map": "/vikakamau/phase-2-code-challlenge-1/static/css/main.d070eabf.css.map",
+    "main.341397b7.js.map": "/vikakamau/phase-2-code-challlenge-1/static/js/main.341397b7.js.map",
+    "453.d3943c81.chunk.js.map": "/vikakamau/phase-2-code-challlenge-1/static/js/453.d3943c81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d070eabf.css",
+    "static/js/main.341397b7.js"
+  ]
+}
