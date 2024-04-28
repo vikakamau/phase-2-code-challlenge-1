@@ -35,6 +35,24 @@ function Transaction(){
             description: "Lc Waikiki",
             category: "Shopping",
             amount: "$500"
+        },
+        {
+            date: "22/01/2022",
+            description: "Gucci",
+            category: "Shopping",
+            amount: "$200"
+        },
+        {
+            date: "22/01/2022",
+            description: "Britam",
+            category: "Investment",
+            amount: "$1500"
+        },
+        {
+            date: "23/01/2022",
+            description: "Movies",
+            category: "Enterteinment",
+            amount: "$30"
         }
      ]
     const [payments, setPayments] = useState(transactions)
@@ -47,7 +65,7 @@ function Transaction(){
         <>
           <Input payments={payments} setPayments={setPayments} transactions={transactions}/>
           <Form  addPayment={addPayment}/>
-        <table className="table table-secondary m-3">
+        <table className="table table-secondary m-3 table-bordered">
             <thead>
                 <tr>
                     <th className="bg-info">Date</th>

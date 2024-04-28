@@ -31,8 +31,9 @@ function inputForm(event){
         <>
         <form onSubmit={onSubmit}>
             <div className="row p-3 bg-light mx-auto">
-                <div className="col-3 ">
+                <div className="col-3 d-flex align-items">
                 <input className="form-control" onChange={inputForm} type="date" name="date" value={formContent.date}  placeholder="date"/>
+                <label className="me-2">Date:</label>
                 </div>
                 <div className="col-3 ">
                 <input className="form-control" onChange={inputForm} type="text" name="description" value={formContent.description} placeholder="describe here" />
