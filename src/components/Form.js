@@ -8,7 +8,7 @@ const[formContent, setFormContent]= useState({
     amount: ""
 })
 
-function handleSubmit(event){
+function onSubmit(event){
     event.preventDefault()
     addPayment(formContent)
     setFormContent({
@@ -19,7 +19,7 @@ function handleSubmit(event){
       });
 }
 
-function handleChange(event){
+function inputForm(event){
     const { name, value } = event.target;
         setFormContent(prevFormContent => ({
             ...prevFormContent,
@@ -29,19 +29,19 @@ function handleChange(event){
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
-            <div className="row p-1">
+        <form onSubmit={onSubmit}>
+            <div className="row p-3 bg-light mx-auto">
                 <div className="col-3 ">
-                <input className="form-control" onChange={handleChange} type="date" name="date" value={formContent.date}  placeholder="date"/>
+                <input className="form-control" onChange={inputForm} type="date" name="date" value={formContent.date}  placeholder="date"/>
                 </div>
                 <div className="col-3 ">
-                <input className="form-control" onChange={handleChange} type="text" name="description" value={formContent.description} placeholder="describe here" />
+                <input className="form-control" onChange={inputForm} type="text" name="description" value={formContent.description} placeholder="describe here" />
                 </div>
                 <div className="col-3 ">
-                <input className="form-control" onChange={handleChange} type="text" name="category" value={formContent.category} placeholder="category here" />
+                <input className="form-control" onChange={inputForm} type="text" name="category" value={formContent.category} placeholder="category here" />
                 </div>
                 <div className="col-3 ">
-                <input className="form-control" onChange={handleChange} type="text" name="amount" value={formContent.amount} placeholder="amount here" />
+                <input className="form-control" onChange={inputForm} type="number" name="amount" value={formContent.amount} placeholder="amount here" />
                 </div>
                 <div className="col-2 mx-auto p-2 ">
                     <button className="btn btn-success" type="submit" >Add payments</button>

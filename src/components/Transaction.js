@@ -47,13 +47,13 @@ function Transaction(){
         <>
           <Input payments={payments} setPayments={setPayments} transactions={transactions}/>
           <Form  addPayment={addPayment}/>
-        <table className="table table-secondary">
+        <table className="table table-secondary m-3">
             <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Category</th>
-                    <th>Amount</th>
+                    <th className="bg-info">Date</th>
+                    <th className="bg-info">Description</th>
+                    <th className="bg-info">Category</th>
+                    <th className="bg-info">Amount</th>
 
                 </tr>
             </thead>

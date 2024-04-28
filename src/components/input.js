@@ -2,7 +2,7 @@
 
 function Input({payments, setPayments, transactions}){ 
 
-    function handleChange(event){
+    function handleSearch(event){
         const tag = event.target.value
     if(tag.length >0){
         const filter = payments.filter((payment)=>{
@@ -23,7 +23,7 @@ function Input({payments, setPayments, transactions}){
     return(
         <>
         <div className="m-2 p-3">
-            <input onChange={handleChange} className="form-control" type="text" placeholder="Enter the required payment"/>
+            <input onChange={handleSearch} className="form-control" type="text" placeholder="Enter the required payment"/>
         </div>
         </>
     )
